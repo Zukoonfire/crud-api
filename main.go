@@ -88,7 +88,7 @@ func main() {
 	r := mux.NewRouter()
 	books = append(books, Book{ID: "1", Isbn: "12226", Title: "How to make Crud", Author: &Author{FirstName: "Santosh", LastName: "Mukherjee"}})
 	books = append(books, Book{ID: "2", Isbn: "45566", Title: "Go Docker", Author: &Author{FirstName: "Himanshu", LastName: "Ranjan"}})
-	books = append(books, Book{ID: "3", Isbn: "2524", Title: "Lothda", Author: &Author{FirstName: "Prashant", LastName: "Singh"}})
+	books = append(books, Book{ID: "3", Isbn: "2524", Title: "Go For Begineers", Author: &Author{FirstName: "Prashant", LastName: "Singh"}})
 
 	//Creating Handlers it will establish endpoints between our API's
 	r.HandleFunc("/books", getBooks).Methods("GET")
